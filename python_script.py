@@ -3,9 +3,9 @@ import boto3
 import os
 
 #Set your AWS credentials and region
-aws_access_key_id = 'AKIAWJDPO5B7G2R2UX6K'
-aws_secret_access_key = 'hNZBlMwreL5MxBF5J1cPKwaWdUemc97G6F28wAzM'
-aws_region = 'us-east-2'
+aws_access_key_id = ''
+aws_secret_access_key = ''
+aws_region = ''
 
 # Set the S3 bucket name and local directory path
 s3_bucket_name = 'kofiseysey'  # Replace with your S3 bucket name
