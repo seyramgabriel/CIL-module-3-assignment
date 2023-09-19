@@ -1,0 +1,4 @@
+30 19 * * * /usr/bin/python3 /home/ssm-user/mys3backup/python_script.py
+
+#Establish the path to the python interpreter
+which python3
