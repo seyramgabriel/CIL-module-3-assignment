@@ -1,0 +1,29 @@
+#You upload this yaml file into cloudformation to create a stack made up of an ec2-instance and s3 bucket 
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CFN Stack for EC2 Instance and S3 Bucket
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-024e6efaf93d85776  # Amazon Linux 2 AMI ID (update as needed)
+      IamInstanceProfile: EC2_SSM #Assign this role to allow SSM into your VM
+      #KeyName: Ubuntukey     # Provide your key pair name here
+      SecurityGroups:
+        - launch-wizard-1         # Provide your security group name here
+
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: kofiseysey  # Provide a unique bucket name here
+
+Outputs:
+  EC2InstancePublicIP:
+    Description: Public IP address of the EC2 instance
+    Value: !GetAtt MyEC2Instance.PublicIp
+
+  S3BucketName:
+    Description: Name of the S3 bucket
+    Value: !Ref MyS3Bucket
