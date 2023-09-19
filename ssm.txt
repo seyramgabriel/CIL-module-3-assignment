@@ -1,0 +1,22 @@
+#Go to cloudshell and run the following:
+
+#replace INSTANCE-ID with your VM's 
+aws ssm start-session --target INSTANCE-ID 
+
+#cd into your home directory
+cd ~ 
+
+#create a directory named mys3backup
+mkdir mys3backup 
+
+#update the apt package manager for ubuntu
+sudo apt update 
+
+#install awscli with the apt package manager
+sudo apt install awscli 
+
+#configure your VM with access and secret access keys,default region and output format
+aws configure 
+
+#replace bucket-name with your bucket name
+aws s3 sync s3://kofiseysey /home/ssm-user/mys3backup 
