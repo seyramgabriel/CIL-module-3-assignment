@@ -9,7 +9,7 @@ Resources:
     Properties:
       InstanceType: t2.micro
       ImageId: ami-0d50e9ae42eead5cd  # Amazon Linux 2 AMI ID (update as needed)
-      IamInstanceProfile: EC2_SSM #Assign this role to allow SSM into your VM
+      IamInstanceProfile: EC2_SSM #Create and assign this role to allow SSM into your VM
       SecurityGroups:
         - launch-wizard-1         # Provide your security group name here
 
