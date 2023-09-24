@@ -9,12 +9,6 @@ cd ~
 #create a directory named mys3backup
 mkdir mys3backup 
 
-#update the apt package manager for ubuntu
-sudo apt update 
-
-#install awscli with the apt package manager
-sudo apt install awscli 
-
 #configure your VM with access and secret access keys,default region and output format
 aws configure 
 
