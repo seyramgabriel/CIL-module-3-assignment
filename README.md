@@ -23,19 +23,18 @@ The template is uploaded:
 The stack is created and the resources therein provisioned:
 ![stack_and_resources_created](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/848c9de0-59e6-4145-ab68-528853ca7604)
 
+
 2. Upload pictures into the s3 bucket created.
+![download_picutre](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/32d90983-b398-4e30-9757-de34e341df98)
 
-![Picture_upload](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/7ceffe73-a092-4ca8-a62a-3c7e2b39eec1)
 
-
-3. The instance ID is used to SSM into the ec2 instance created via cloudshell.  The SSM IAM role assigned to the ec2 instance allows us to SSM into the virtual machine without having use for keypairs...  
+3. The instance ID is used to SSM into the ec2 instance created via cloudshell.  The SSM IAM role assigned to the ec2 instance allows us to SSM into the virtual machine without having use for keypairs. 
 
 
 ![INSTANCE_ID](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/27f27c83-a027-48d6-9f2b-51a11a3b7d29)
 
 
-...by running " aws ssm start-session --target INSTANCE-ID"
-
+Run "aws ssm start-session --target INSTANCE-ID":
 ![SSM](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/cdb3249c-f553-4243-a8da-639b65b69601)
 
 
@@ -43,7 +42,7 @@ The stack is created and the resources therein provisioned:
 
 5. Configure your VM with access and secret access keys,default region and output format (aws configure). This is important in order to run 'aws' commands and without which access to your bucket will be denied.
 
-   ![aws_configure](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/c4830e52-49ca-4d20-a795-db46743c6822)
+![aws_configure](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/c4830e52-49ca-4d20-a795-db46743c6822)
 
 6. Execute "s3 sync s3://bucketname /home/ssm-user/mys3backup", replacing bucketname with the s3 bucket created.
 This will download all objects (the pictures) in s3 bucket uploaded under step 2, into mys3backup directory, created in step 4.
@@ -92,24 +91,17 @@ if __name__ == '__main__':
 
 
 10. Run the python script (python python_script.py). Be sure to upload more files into s3 bucket before running the script to confirm successful download upon running the script.
-
-
 ![Run_python_script](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/0d394058-2883-4f11-892d-2674cd6680f0)
 
 
    
 11. Open the cronjob editor (crontab -e) and input this cronjob to run python_script.py at 7:30pm each day
 30 19 * * * /usr/bin/python /home/ssm-user/mys3backup/python_script.py
-
-
-
 ![The_cronjob](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/3b64688e-f930-435a-95e1-d1667e3e8f7e)
 
 
 
 # The Architure
-
-
 ![Architure](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/d4ac56e3-2c16-46f4-a8e5-2a3c5a464106)
 
 
