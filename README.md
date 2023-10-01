@@ -85,9 +85,9 @@ Getting an archectural diagram and uploading pictures to github was also challen
 Essentially, the above challenges and overcoming them, in my estimation, form the crux of the assignment.
 
 # Conclusion
-It is exciting learning how to ssm into an ec2 instance, instead of ssh, and using  cloudshell instead of local terminal. I would encourage all to experience this, and experiment cloudformation, which indeed makes creating and managing virtual resources on AWS easier and faster, once the desired template is ready.
+It is exciting learning how to ssm into an ec2 instance, instead of using ssh, and using  cloudshell instead of local terminal. I would encourage all to experience this, and experiment cloudformation, which indeed makes creating and managing virtual resources on AWS easier and faster, once the desired template is ready.
 
 # Going Forward
-I get elated whenever I press enter and meet with success on the terminal. I love to work with codes. This assignment makes me want to explore the aws cloudformation documentation to experiment with a lot more virtual resources and that is exactly what I look forward to doing. 
+I get elated whenever I press enter and meet with success on the terminal. I would love to work with codes. This assignment makes me want to explore the aws cloudformation documentation to experiment with a lot more virtual resources and that is exactly what I look forward to doing. 
 
    
