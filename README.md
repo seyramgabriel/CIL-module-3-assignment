@@ -80,7 +80,7 @@ This will download all objects (the pictures) in s3 bucket uploaded under step 2
 # Challenges Encountered
 After creating the stack and entering the ec2 instance via ssm, it became a challenge understanding what to install onto the VM to allow aws and python commands. I had initially created the stack with an ubuntu AMI, which required installing aws cli with 'apt' package manager, as well as installing python. I later deleted the stack and started all over with amazon linux 2 AMI. Amazon linux 2 comes with aws cli and python pre-installed, but one needs to configure aws and install pip with 'yum' and then use pip to install boto3.
 
-Getting an archectural diagram was a challenge, but thanks to @DelaDoreen who assisted in this regard.
+Getting an archectural diagram and uploading pictures to github was a challenge, but thanks to @DelaDoreen who assisted in this regard.
 
 # Conclusion
 It is exciting learning how to ssm into an ec2 instance, instead of ssh, and using  cloudshell instead of local terminal. I would encourage all to experience this, and experiment cloudformation, which indeed makes creating and managing virtual resources on AWS easier and faster, once the desired template is ready.
