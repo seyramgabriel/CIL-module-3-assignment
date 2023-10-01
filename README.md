@@ -52,38 +52,8 @@ This will download all objects (the pictures) in s3 bucket uploaded under step 2
 ![Install_pip_and_boto3](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/93c27d74-3a3b-498a-b013-8c257a84bd99)
 
 
-8. Create a .py script with the following, replacing bucket name and region:
-    
-import boto3
-import os
-
-s3_bucket_name = 'bucketname'  
-local_directory = '/home/ssm-user/mys3backup'
-
-def copy_s3_bucket_contents():
-    try:        
-        session = boto3.Session()
-        s3 = session.client('s3', region_name='us-east-2')
-      
-        if not os.path.exists(local_directory):
-            os.makedirs(local_directory)
-      
-        objects = s3.list_objects_v2(Bucket=s3_bucket_name)
-       
-        for obj in objects.get('Contents', []):
-            s3_object_key = obj['Key']
-            local_file_path = os.path.join(local_directory, os.path.basename(s3_object_key))
-
-            s3.download_file(s3_bucket_name, s3_object_key, local_file_path)
-            print('Copied: {} to {}'.format(s3_object_key, local_file_path))
-
-        print('S3 bucket contents copied to the local directory successfully.')
-
-    except Exception as e:
-        print('Error: {}'.format(e))
-
-if __name__ == '__main__':
-    copy_s3_bucket_contents()
+8. Create a .py script with the following, replacing bucket name and region:  
+![python_script](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/809ab54b-f730-4ba7-b736-2c5f30177769)
 
 
 9. Run the python script (python python_script.py). Be sure to upload more files into s3 bucket before running the script to confirm successful download upon running the script.
