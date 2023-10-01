@@ -53,7 +53,7 @@ This will download all objects (the pictures) in s3 bucket uploaded under step 2
 ![download_from_bucket](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/9590a437-38df-4be2-a09a-78f2f18080ee)
 
 
-7. Install pip package manager by running "sudo yum install pip" then use pip to install boto3 "pip install boto3". This is a prerequisite to successfully run a python script with boto3 in your ec2 instance, amazon linux 2, which already has python.
+7. Install pip package manager by running "sudo yum install pip" then use pip to install boto3 "pip install boto3". This is a prerequisite to successfully run the python script, since boto3 is the AWS SDK for python, even though amazon linux 2 comes preinstalled with python.
 
 ![Install_pip_and_boto3](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/93c27d74-3a3b-498a-b013-8c257a84bd99)
 
@@ -78,11 +78,16 @@ This will download all objects (the pictures) in s3 bucket uploaded under step 2
 
 
 # Challenges Encountered
-After creating the stack and entering the ec2 instance via ssm, it became a challenge understanding what to install onto the VM to allow aws and python commands. I had initially created the stack with an ubuntu AMI, which required installing aws cli with 'apt' package manager, as well as installing python. I later deleted the stack and started all over with amazon linux 2 AMI. Amazon linux 2 comes with aws cli and python pre-installed, but one needs to configure aws and install pip with 'yum' and then use pip to install boto3.
+After creating the stack and entering the ec2 instance via ssm, it became a challenge understanding what to install onto the VM to allow aws and python/boto3 commands. I had initially created the stack with an ubuntu AMI, which required installing aws cli with 'apt' package manager, as well as installing python. I later deleted the stack and started all over with amazon linux 2 AMI. Amazon linux 2 comes with aws cli and python pre-installed, but one needs to configure aws and install pip with 'yum' and then use pip to install boto3.
 
-Getting an archectural diagram and uploading pictures to github was a challenge, but thanks to @DelaDoreen who assisted in this regard.
+Getting an archectural diagram and uploading pictures to github was also challenge, but thanks to @DelaDoreen who assisted in this regard.
+
+Essentially, the above challenges and overcoming them, in my estimation, form the crux of the assignment.
 
 # Conclusion
 It is exciting learning how to ssm into an ec2 instance, instead of ssh, and using  cloudshell instead of local terminal. I would encourage all to experience this, and experiment cloudformation, which indeed makes creating and managing virtual resources on AWS easier and faster, once the desired template is ready.
+
+# Going Forward
+I get elated whenever I press enter and meet with success on the terminal. I love to work with codes. This assignment makes me want to explore the aws cloudformation documentation to experiment with a lot more virtual resources, that is exactly what I look forward to doing. 
 
    
