@@ -3,8 +3,11 @@ This repository was created to detail out steps taken to perform tasks in an ass
 
 # Tasks in the Assignment
 •	Provision a t2.micro EC2 instance (Amazon Linux 2 AMI) and an S3 bucket using AWS cloudformation.
+
 •	The EC2 instance must be assigned an IAM role to allow access via SSM instead of SSH (NO Key Pairs).
+
 •	Upload some lovely pictures into the S3 bucket created in first task.
+
 •	SSM into the EC2 instance and copy the contents of the S3 bucket into a DIRECTORY within your home directory called "mys3backup" (e.g. /home/blessing/mys3backup)
 •	Write a Python Script that copies the S3 content to that directory on execution
 •	Set up a cron job to execute the Python Script at least once every day at a time of your choosing - morning, noon, or night.
