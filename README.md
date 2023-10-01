@@ -80,7 +80,7 @@ This will download all objects (the pictures) in s3 bucket uploaded under step 2
 # Challenges Encountered
 After creating the stack and entering the ec2 instance via ssm, it became a challenge understanding what to install onto the VM to allow aws and python/boto3 commands. I had initially created the stack with an ubuntu AMI, which required installing aws cli with 'apt' package manager, as well as installing python. I later deleted the stack and started all over with amazon linux 2 AMI. Amazon linux 2 comes with aws cli and python pre-installed, but one needs to configure aws and install pip with 'yum' and then use pip to install boto3.
 
-Getting an archectural diagram and uploading pictures to github was also challenge, but thanks to @DelaDoreen who assisted in this regard.
+Getting an architectural diagram and uploading images to github was also a challenge, but thanks to @DelaDoreen who assisted in this regard.
 
 Essentially, the above challenges and overcoming them, in my estimation, form the crux of the assignment.
 
