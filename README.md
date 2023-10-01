@@ -12,19 +12,18 @@ This repository was created to detail out steps taken to perform tasks in an ass
 
 # Fulfilling the tasks
 1. Cloudformation is an AWS service that makes it easier to create and manage virtual resources using templates. A template is a code written in yaml or json format to provision several resources in a single unit, called stack. In this assignment, the stack was made up of an amazon linux 2 ec2 instance and an s3 bucket.
-   
+
+The template:   
 ![ec2-s3-stack](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/7182ac1f-edc3-4e6e-be9a-07ecab925f15)
 
-The template is uploaded 
-
+The template is uploaded:
 ![Upload_yaml_file](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/d942febb-5252-4887-b5d1-5d32f1a40383)
 
 
-The stack is created and the resources therein provisioned
-
+The stack is created and the resources therein provisioned:
 ![stack_and_resources_created](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/848c9de0-59e6-4145-ab68-528853ca7604)
 
-2. Pictures are uploaded into the s3 bucket created.
+2. Upload pictures into the s3 bucket created.
 
 ![Picture_upload](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/7ceffe73-a092-4ca8-a62a-3c7e2b39eec1)
 
@@ -46,7 +45,7 @@ The stack is created and the resources therein provisioned
 
    ![aws_configure](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/c4830e52-49ca-4d20-a795-db46743c6822)
 
-6. Execute s3 sync s3://bucketname /home/ssm-user/mys3backup, replacing bucketname with the s3 bucket created.
+6. Execute "s3 sync s3://bucketname /home/ssm-user/mys3backup", replacing bucketname with the s3 bucket created.
 This will download all objects (the pictures) in s3 bucket uploaded under step 2, into mys3backup directory, created in step 4.
 
 ![download_from_bucket](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/9590a437-38df-4be2-a09a-78f2f18080ee)
@@ -57,7 +56,8 @@ This will download all objects (the pictures) in s3 bucket uploaded under step 2
 ![Install_pip_and_boto3](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/93c27d74-3a3b-498a-b013-8c257a84bd99)
 
 
-9. Create a .py script with the following, replacing bucket name and region. 
+9. Create a .py script with the following, replacing bucket name and region.
+    
 import boto3
 import os
 
@@ -89,6 +89,7 @@ def copy_s3_bucket_contents():
 
 if __name__ == '__main__':
     copy_s3_bucket_contents()
+
 
 10. Run the python script (python python_script.py). Be sure to upload more files into s3 bucket before running the script to confirm successful download upon running the script.
 
