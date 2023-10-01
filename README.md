@@ -67,8 +67,8 @@ This will download all objects (the pictures) in s3 bucket uploaded under step 2
 
 
    
-11. Open the cronjob editor (crontab -e) and input this cronjob to run python_script.py at 7:30pm each day
-30 19 * * * /usr/bin/python /home/ssm-user/mys3backup/python_script.py
+10. Open the cronjob editor (crontab -e) and input this cronjob to run python_script.py at 7:30pm each day
+"30 19 * * * /usr/bin/python /home/ssm-user/mys3backup/python_script.py"
 ![The_cronjob](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/3b64688e-f930-435a-95e1-d1667e3e8f7e)
 
 
