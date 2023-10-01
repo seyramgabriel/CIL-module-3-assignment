@@ -17,7 +17,7 @@ import boto3
 import os
 
 # Set the S3 bucket name and local directory path
-s3_bucket_name = 'kofiseysey'  # Replace with your S3 bucket name
+s3_bucket_name = 'bucketname'  # Replace with your S3 bucket name
 local_directory = '/home/ssm-user/mys3backup'
 
 def copy_s3_bucket_contents():
