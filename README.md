@@ -34,7 +34,7 @@ This repository was created to detail out steps taken to perform tasks in an ass
 ![Picture_upload](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/218af247-ec41-49d3-b6b5-1fa277fbb7dc)
 
 
-3. The instance ID is used to SSM into the ec2 instance created via cloudshell.  The SSM IAM role assigned to the ec2 instance allows us to SSM into the virtual machine without having use for keypairs. 
+3. The instance ID is used to SSM into the  created ec2 instance via cloudshell.  The SSM IAM role assigned to the ec2 instance allows us to SSM into the virtual machine without having use for keypairs. 
 ![INSTANCE_ID](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/27f27c83-a027-48d6-9f2b-51a11a3b7d29)
 
 
