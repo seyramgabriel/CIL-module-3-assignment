@@ -1,4 +1,8 @@
-30 19 * * * /usr/bin/python /home/ssm-user/mys3backup/python_script.py
-
 #Establish the path to the python interpreter
 which python
+
+#Open the cronjob editor
+crontab -e
+
+#Input this cronjob to run python_script.py at 7:30pm each day
+30 19 * * * /usr/bin/python /home/ssm-user/mys3backup/python_script.py
