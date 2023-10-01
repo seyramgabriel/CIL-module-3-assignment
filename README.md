@@ -9,8 +9,11 @@ This repository was created to detail out steps taken to perform tasks in an ass
 •	Upload some lovely pictures into the S3 bucket created in first task.
 
 •	SSM into the EC2 instance and copy the contents of the S3 bucket into a DIRECTORY within your home directory called "mys3backup" (e.g. /home/blessing/mys3backup)
+
 •	Write a Python Script that copies the S3 content to that directory on execution
+
 •	Set up a cron job to execute the Python Script at least once every day at a time of your choosing - morning, noon, or night.
+
 •	As a plus - write up a small design description to show what you have achieved. If you add a picture, you save a thousand words 
 
 # Fulfilling the Tasks
