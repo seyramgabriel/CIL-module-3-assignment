@@ -44,7 +44,7 @@ This repository was created to detail out steps taken to perform tasks in an ass
 
 4. Whiles in the VM, cd into your home directory (cd ~), create a directory named "mys3backup" (mkdir mys3backup). 
 
-5. Configure your VM with access and secret access keys, default region and output format (run aws configure), without which access to your bucket will be denied.
+5. Configure your VM (run aws configure) with access and secret access keys, default region and output format , without which access to your bucket will be denied.
 ![aws_configure](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/c4830e52-49ca-4d20-a795-db46743c6822)
 
 6. Execute "s3 sync s3://bucketname /home/ssm-user/mys3backup", replacing bucketname with the s3 bucket created.
@@ -88,6 +88,6 @@ Essentially, the above challenges and overcoming them, in my estimation, form th
 It is exciting learning how to ssm into an ec2 instance, instead of ssh, and using  cloudshell instead of local terminal. I would encourage all to experience this, and experiment cloudformation, which indeed makes creating and managing virtual resources on AWS easier and faster, once the desired template is ready.
 
 # Going Forward
-I get elated whenever I press enter and meet with success on the terminal. I love to work with codes. This assignment makes me want to explore the aws cloudformation documentation to experiment with a lot more virtual resources, that is exactly what I look forward to doing. 
+I get elated whenever I press enter and meet with success on the terminal. I love to work with codes. This assignment makes me want to explore the aws cloudformation documentation to experiment with a lot more virtual resources and that is exactly what I look forward to doing. 
 
    
