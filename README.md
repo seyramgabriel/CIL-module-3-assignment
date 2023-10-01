@@ -53,7 +53,7 @@ This will download all objects (the pictures) in s3 bucket uploaded under step 2
 ![download_from_bucket](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/9590a437-38df-4be2-a09a-78f2f18080ee)
 
 
-7. Install pip package manager by running "sudo yum install pip" then use pip to install boto3 "pip install boto3". This is a prerequisite to successfully run a python script in your ec2 instance, amazon linux 2, which already has python.
+7. Install pip package manager by running "sudo yum install pip" then use pip to install boto3 "pip install boto3". This is a prerequisite to successfully run a python script with boto3 in your ec2 instance, amazon linux 2, which already has python.
 
 ![Install_pip_and_boto3](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/93c27d74-3a3b-498a-b013-8c257a84bd99)
 
