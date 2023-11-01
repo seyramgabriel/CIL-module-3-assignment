@@ -19,14 +19,14 @@ This repository was created to detail out steps taken to perform tasks in an ass
 # Fulfilling the Tasks
 1. Cloudformation is an AWS service that makes it easier to create and manage virtual resources using templates. A template is a code written in yaml or json format to provision several resources in a single unit, called stack. In this assignment, the stack was made up of an amazon linux 2 ec2 instance and an s3 bucket.
 
-    The template:   
+    *The template:*  
 ![ec2-s3-stack](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/7182ac1f-edc3-4e6e-be9a-07ecab925f15)
 
-    The template is uploaded:
+    *The template is uploaded:*
 ![Upload_yaml_file](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/d942febb-5252-4887-b5d1-5d32f1a40383)
 
 
-    The stack is created and the resources therein provisioned:
+    *The stack is created and the resources therein provisioned:*
 ![stack_and_resources_created](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/848c9de0-59e6-4145-ab68-528853ca7604)
 
 
@@ -38,7 +38,7 @@ This repository was created to detail out steps taken to perform tasks in an ass
 ![INSTANCE_ID](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/27f27c83-a027-48d6-9f2b-51a11a3b7d29)
 
 
-   Run "aws ssm start-session --target INSTANCE-ID":
+   *Run "aws ssm start-session --target INSTANCE-ID":*
 ![SSM](https://github.com/seyramgabriel/CIL-module-3-assignment/assets/130064282/cdb3249c-f553-4243-a8da-639b65b69601)
 
 
